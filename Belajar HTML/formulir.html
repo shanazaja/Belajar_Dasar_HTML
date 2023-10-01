@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Formulir</title>
+    <link rel="shortcut icon" href="logo 2.png" type="image/x-icon" />
+  </head>
+  <body>
+    <h1 align="center">LATIHAN FORMULIR</h1>
+    <form action="contact.php" method="POST">
+      <fieldset>
+        <legend align="center">Input Data</legend>
+        <p>
+          <label>Nama:</label>
+          <input type="text" name="nama" placeholder="Nama lengkap..." />
+        </p>
+        <p>
+          <label>Password:</label>
+          <input type="password" name="password" />
+        </p>
+        <p>
+          <label>Tanggal Lahir:</label>
+          <input type="date" name="tanggal" />
+        </p>
+        <p>
+          <label>Jenis kelamin:</label>
+          <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+          <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+        <p>
+          <label>Nomor Telepon:</label>
+          <input type="number" />
+        </p>
+        <p>
+          <label>Asal Kota:</label>
+          <select name="agama">
+            <option value="islam">Purwokerto</option>
+            <option value="kristen">Klaten</option>
+            <option vadlue="hindu">Cilacap</option>
+            <option value="budha">Purbalingga</option>
+          </select>
+        </p>
+        <p>
+          <label>Alamat:</label>
+          <textarea name="alamat"></textarea>
+        </p>
+        <p>
+          <label>Hobi:</label>
+          <label><input type="radio" name="hobi" value="membaca_buku" /> Membaca Buku</label>
+          <label><input type="radio" name="hobi" value="menulis" /> Menulis</label>
+          <label><input type="radio" name="hobi" value="memancing" /> Memancing</label>
+        </p>
+        <p>
+          <label>Makanan Favorit:</label>
+          <input type="text" name="makanan_favorit" />
+        </p>
+        <p>
+          <input type="submit" name="submit" value="Submit" />
+          <input type="submit" name="submit" value="Reset" />
+        </p>
+      </fieldset>
+      <p>
+        <button>Next Page</button>
+      </p>
+    </form>
+  </body>
+</html>
